@@ -20,7 +20,7 @@
           <td>
             <p>
               <%= link_to book_favorite_path(book), method: :delete do %>
-                ♥<%= book.favorites.count %>
+                <span class="text-danger">♥<%=book.favorites.count %></span>
               <% end %>  
             </p>
           </td>
