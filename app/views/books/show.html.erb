@@ -23,6 +23,7 @@
           <td id="number_of_comments">
             <%= render 'book_comments/number_of_comments', book: @book %>
           </td>
+          <td><%= render "static.rate", book: @book %></td>
           <% if @book.user == current_user %>
             <td><%= link_to 'Edit', edit_book_path(@book), class: "btn btn-sm btn-success" %></td>
             <td><%= link_to 'Destroy', @book, method: :delete, data: { confirm: '本当に消しますか？' }, class: "btn btn-sm btn-danger"%></td>
