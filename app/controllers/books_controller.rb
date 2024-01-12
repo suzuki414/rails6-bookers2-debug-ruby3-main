@@ -12,9 +12,6 @@ class BooksController < ApplicationController
   def index
     @book = Book.new
     @books = Book.all.order(params[:sort])
-    if params[:tag_name]
-      @books = Book.tagged_with("#{params[:tag_name]}").order(params[:sort])
-    end
   end
 
   def create

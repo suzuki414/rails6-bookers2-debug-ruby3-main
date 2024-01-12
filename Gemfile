@@ -60,5 +60,3 @@ gem 'devise'
 gem 'net-smtp'
 
 gem 'jquery-rails'
-
-gem 'acts-as-taggable-on', '~> 9.0'
